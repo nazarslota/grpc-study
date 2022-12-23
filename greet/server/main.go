@@ -9,10 +9,6 @@ import (
 
 const addr = "0.0.0.0:5051"
 
-type server struct {
-	pb.GreetServiceServer
-}
-
 func main() {
 	listener, err := net.Listen("tcp", addr)
 	if err != nil {
@@ -20,6 +16,8 @@ func main() {
 	}
 
 	s := grpc.NewServer()
+	pb.RegisterGreetServiceServer(s, &Server{})
+
 	if err := s.Serve(listener); err != nil {
 		panic(err)
 	}
