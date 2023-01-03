@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 
-	pb "github.com/udholdenhed/grpc-study/sum/proto"
+	pb "github.com/nazarslota/grpc-study/sum/proto"
 )
 
 type Server struct {

@@ -1,4 +1,4 @@
-module github.com/udholdenhed/grpc-study
+module github.com/nazarslota/grpc-study
 
 go 1.19
 

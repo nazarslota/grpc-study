@@ -7,7 +7,7 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 
-	pb "github.com/udholdenhed/grpc-study/greet/proto"
+	pb "github.com/nazarslota/grpc-study/greet/proto"
 )
 
 const addr = "0.0.0.0:5051"

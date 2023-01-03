@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	pb "github.com/udholdenhed/grpc-study/sum/proto"
+	pb "github.com/nazarslota/grpc-study/sum/proto"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 )

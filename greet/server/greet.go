@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	pb "github.com/udholdenhed/grpc-study/greet/proto"
+	pb "github.com/nazarslota/grpc-study/greet/proto"
 )
 
 type Server struct {

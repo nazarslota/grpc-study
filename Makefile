@@ -37,7 +37,7 @@ else
 endif
 
 .DEFAULT_GOAL := help
-.PHONY: greet sum blog calculator help
+.PHONY: greet sum calculator blog help
 project := greet sum calculator blog
 
 all: $(project) ## Generate Pbs and build
@@ -56,7 +56,7 @@ $(project):
 test: all ## Launch tests
 	go test ./...
 
-clean: clean_greet clean_calculator clean_blog ## Clean generated files
+clean: clean_greet clean_sum clean_calculator clean_blog ## Clean generated files
 	${RM_F_CMD} ssl/*.crt
 	${RM_F_CMD} ssl/*.csr
 	${RM_F_CMD} ssl/*.key
